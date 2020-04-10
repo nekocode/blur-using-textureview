@@ -13,7 +13,7 @@ float SCurve (float x) {
     return -x * abs(x) * 0.5 + x + 0.5;
 }
 
-vec4 BlurH (sampler2D source, vec2 size, vec2 uv, float radius) {
+vec4 BlurH (samplerExternalOES source, vec2 size, vec2 uv, float radius) {
 
 	if (radius >= 1.0)
 	{
